@@ -6,19 +6,19 @@
 		<meta charset= "utf-8">
 		<meta name="author" content="ANDRIAMANANTENASOA & RABENANDRASANA">
 		<meta name="description" content="Page web de révision cours des Outils Java- basé sur le cours de M.LEMAIRE (CY Paris Université).">
-		<title> Principe POO - Java p4</title>
+		<title> Révision Java : Outils</title>
 	</head> 
 	<body> 
 		<header> 
 			<h1>Outils Java </h1>
-			<img src="images/LogoCY.png" width="40" alt="imageCY">
-			<img src="images/LogoPOO.png" width="40" alt="imagePOOJava">
+			<img class="logo" src="images/LogoCY.png" alt="imageCY">
 			<nav>
 			<p>Sommaire:</p>
 				<ul>
 					<li><a href="index.html">Introduction</a></li>
 					<li><a href="generalite.html">Généralités</a></li>
 					<li><a href="principes_poo.html">Programmation Orientée Objet</a></li>
+					<li><a href="interface.html">Interface et Swing</a></li>
 					<li><a href="outil_java.html">Outils Java</a></li>
 					<li><a href="exercices.html">Exercices</a></li>
 				</ul>
@@ -57,20 +57,20 @@
 			</section>
 			<section>
 				<h2>Gestion des Erreurs</h2>
-				<p>Une execption est un objet qui s'instancie lors de l'éxécution d'un code contenant une situation anormale détectée (erreur). Exemple concret :</p>
+				<p>Une exception est un objet qui s'instancie lors de l'éxécution d'un code contenant une situation anormale détectée (erreur). Exemple concret :</p>
 				<figure>
-					<img src="images/exeption1.png" width="210" alt="ImageExempleException">
+					<img class="images" id="incremente" src="images/exeption1.png" alt="ImageExempleException">
 					<figcaption>Code : <code>incrementer()</code> de la classe <code>CompteurCyclique</code> lance la classe Exception Personalisé <code>LimiteAtteintException</code> hérite de <code>Exception</code></figcaption>
 				</figure>
 				<figure>
-					<img src="images/exeception2.png" width="210" alt="ImageExempleException">
+					<img class="images" id="chronometre" src="images/exeception2.png" alt="ImageExempleException">
 					<figcaption>Code : dans le <code>main</code> dans le <code>try</code> on met le code dangereux et <code>catch</code> si erreur</figcaption>
 				</figure>
 			</section>
 			<section>
 				<h2>Architecture MVC et Java Swing</h2>
 				<p>Pour implémenter une interface graphique (GUI), on se base sur le modèle <strong>MVC</strong> qui sépare les données de leur affichage. Les éléments graphiques développés à l'aide de la bibliothèque de classes <strong><code>Swing</code></strong>.</p>
-				<table border="1">
+				<table>
 					<caption>Tableau : Explication modèle MVC</caption>
 					<thead>
 						<tr>
@@ -81,17 +81,17 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>M = Modèle</td>
+							<td><strong>M</strong> = Modèle</td>
 							<td>Stocke les données + logique métier.</td>
 							<td>Ex: les classes <code>Etudiant</code>; <code>Playlist</code>.</td>
 						</tr>
 						<tr>
-							<td>V = Vue</td>
+							<td><strong>V</strong> = Vue</td>
 							<td>Affiche les données (via conteneurs Swing)</td>
 							<td>Ex: <code>JFrame</code>; <code>JTable</code>.</td>
 						</tr>
 						<tr>
-							<td>C = Contrôleur</td>
+							<td><strong>C</strong> = Contrôleur</td>
 							<td>Gère l'intéraction utilisateur (évènements Entrée/Sortie).</td>
 							<td>Ex: <code>ActionListener</code> <code>ActionPerformed</code>.</td>
 						</tr>
@@ -102,9 +102,7 @@
 		<hr>
 		<footer>
 			<p><a href="#top">Haut de page</a></p>
-			<p>2026 - L2 Informatique - Grp B - TD Déveleppement Web</p>
-			<p>ANDRIAMANANTENASOA Aina Mirija & RABENANDRASANA Hajatiana  L2_Info_B</p>
-			<p>Sources : Documents de cours L2-Informatique Marc LEMAIRE CY Paris Université</p>
+			<div>2026 - L2 Informatique - Grp B - TD Déveleppement Web - ANDRIAMANANTENASOA Aina Mirija & RABENANDRASANA Hajatiana - L2_Info_B Sources : Documents de cours L2-Informatique Marc LEMAIRE CY Paris Université</div>
 		</footer>
 	</body>
 </html>
