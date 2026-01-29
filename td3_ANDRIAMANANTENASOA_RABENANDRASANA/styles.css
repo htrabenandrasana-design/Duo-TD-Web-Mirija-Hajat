@@ -1,0 +1,29 @@
+
+nav{
+    text-align: center;
+    border: medium dashed green;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+    }
+
+    ul li {
+        float: initial;
+    }
+
+    ul li a {
+        display: inline-block;
+        color: green;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
